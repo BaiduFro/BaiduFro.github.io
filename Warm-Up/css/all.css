@@ -1,0 +1,192 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+/*瀑布流相应css*/
+*{padding: 0;margin:0;}
+#main{
+	    position: relative;
+	 }
+	    .pin{
+	        padding: 15px 0 0 15px;
+	        float:left;
+	    }
+	    .box{
+	        padding: 10px;
+	        border:1px solid #ccc;
+	        box-shadow: 0 0 6px #ccc;
+	        border-radius: 5px;
+            transition:transform 0.5s;
+            -moz-transition:transform 0.5s; /* Firefox 4 */
+            -webkit-transition:transform 0.5s; /* Safari and Chrome */
+            -o-transition:transform 0.5s; /* Opera */
+	    }
+	    .box img{
+	        width:162px;
+	        height:auto;
+	    }
+        .box:hover{
+            cursor:pointer;
+            transform:scale(1.05,1.05)
+        }
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+#sidebar{
+	position: fixed;
+	float: left;
+	width: 15%;
+	height:100%;
+	background: url(../images/sidebarBack.png) repeat;
+}
+.sidebarIco{
+	width: 60%;
+	margin: 50px auto;
+}
+.sidebarIco img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.7
+}
+.sidebarIco img:hover{
+	opacity: 1;
+	cursor:pointer;
+}
+.sidebarIco:hover{
+	cursor: pointer;
+}
+.sidebarUls{
+	width: 55%;
+	margin:0 auto;
+}
+.sidebarUls .sidebarTitle{
+	font: bold 16px/40px "Microsoft Yahei",sans-serif;
+	color: #fff;
+}
+.sidebarUls ul li a {
+	font: 14px/20px "Microsoft Yahei",sans-serif;
+	color: #ef1840;
+	padding-left: 30%
+}
+.sidebarUls ul li a:hover{
+	text-decoration: none;
+	color: white;
+}
+.indexContent{
+	    float: right;
+    width: 85%;
+}
+
+.listContent{
+	float: right;
+	width: 85%;
+}
+
+/* 内容页右边部分 */
+.indexContent{
+	float: right;
+	width: 85%;
+	background: rgb(243,243,243);
+}
+.rightSide{
+	background: #fff;
+	width: 18%;
+	padding: 15px;
+	float: left;
+	margin: 20px 0 0 5%
+}
+.rightSide span{
+	font:  12px/25px "Microsoft Yahei",sans-serif;
+	color: #aaa;
+	padding-right: 20px; 
+}
+.rightSide h1{
+	font: bold 20px "Microsoft Yahei",sans-serif;
+	color: #ef1840;
+}
+.rightSide h3{
+	font: bold 16px/30px "Microsoft Yahei",sans-serif;
+	color: #ef1840;
+}
+.rightSide p{
+	font:  12px/25px "Microsoft Yahei",sans-serif;
+	color: #666
+}
+.contentMain{
+	width: 60%;
+	background: #fff;	
+	float: left;
+	margin: 20px 0 0  12%;
+}
+.contentMain img{
+	width: 100%;
+}
+
+/* end */
+
+
+
+
+.listBlockButton{
+	height:22px;
+	padding-top: 8px;
+}
+.buttonIlike{
+	width:22px;
+	height:18px;
+	background-image: url(../images/ilike_1.png);
+	float:right;
+	cursor:pointer;
+}
+.buttonIlike:hover{
+	background-image: url(../images/ilike_2.png);
+}
+.buttonZheshisha{
+	width:19px;
+	height:18px;
+	background-image: url(../images/zheshisha_1.png);
+	float:right;
+	cursor:pointer;
+}
+.buttonZheshisha:hover{
+	background-image: url(../images/zheshisha_2.png);
+}
+.buttonTwiter{
+	width:21px;
+	height:17px;
+	background-image:url(../images/twiter_1.png);
+	float:right;
+	cursor:pointer;
+}
+.buttonTwiter:hover{
+	background-image: url(../images/twiter_2.png);
+}
+.buttonFacebook{
+	width:18px;
+	height:18px;
+	background-image:url(../images/facebook_1.png);
+	float: right;
+	cursor:pointer;
+}
+.buttonFacebook:hover{
+	background-image: url(../images/facebook_2.png);
+}
+
+@media screen and (max-width: 920px){
+	.contentMain{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.contectMain{
+		margin-left: 5%;
+	}	
+}
