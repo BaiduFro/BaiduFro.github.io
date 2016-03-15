@@ -1,0 +1,137 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+
+.wrap{
+	width: 100%;
+}
+.header .headerLogo{
+	float: left;
+	margin: 10px 0 0 60px;
+}
+.header .headerLogo img{
+	float: left;
+}
+.header .headerLogo a span{
+	font: bold 16px/40px "Microsoft Yahei",sans-serif;
+	line-height: 40px;
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+.headerLoading{
+	float: right;
+	font: 14px/30px "Microsoft Yahei",sans-serif;
+	padding: 10px 0; 
+	margin: 0 50px 0 10px;
+	border-bottom: 4px solid #fff;
+}
+.headerLoading a{
+	color: #E44F56;
+}
+.headerLoading a img{
+	padding: 0 5px;
+}
+.header ul{
+	float:right;
+}
+.header ul a{
+	font: 14px/30px "Microsoft Yahei",sans-serif;
+	float: left;
+	padding: 10px 0; 
+	margin: 0 10px;
+	border-bottom: 4px solid #fff;
+	width: 85px;
+	display: inline-block;
+	text-align: center;
+}
+.header ul a:hover{
+	border-bottom: 4px solid #E44F56;
+	color: #E44F56;
+}
+.header a:hover{
+	text-decoration: none;
+}
+.bannerStartWrap{
+	padding:12% 0 12% 10%;
+}
+.bannerStart{
+	background: url(../images/pic_1.png) no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.bannerStart h1{
+	font:  60px "Microsoft Yahei",sans-serif;
+	color: #fff;
+	margin-bottom: 15px;
+}
+.bannerStart p{
+	font: 18px/30px "Microsoft Yahei",sans-serif;
+	color: #fff;
+}
+.bannerStart .startExp{
+	display: block;
+	width: 210px;
+	height: 50px;
+	background: #E44F56;
+	margin-top:80px;
+	font:25px/50px "Microsoft Yahei",sans-serif;
+	text-align: center;
+	color: #fff;
+}
+.bannerStart .startExp:hover{
+	background: #B9232A;
+}
+.bannerStart a:hover{
+	text-decoration: none;
+}
+
+.bannerLineBlocks{
+	float: left;
+	width: 25%;
+	padding: 60px 0;
+}
+.bannerLineBlocks .LineLogo img{
+	margin: 0 auto 40px;
+	display: block;
+
+}
+.bannerLineBlocks p{
+	text-align: center;
+	font:16px "Microsoft Yahei",sans-serif;
+	width: 60%;
+	padding: 0 20%;
+	border-right: 1px solid #ccc;
+}
+.bannerLineLast p{
+	border-right: 0 !important;
+}
+.bannerKnow{
+	background: #EDEAE8;
+	padding: 60px 0;
+}
+.bannerKnow .KnowLogo{
+	margin-bottom: 30px;
+}
+.bannerKnow .KnowLogo img{
+	display: block;
+	margin:0 auto;
+}
+.bannerKnow span{
+	font: 42px "Microsoft Yahei",sans-serif;
+	display: block;
+	text-align: center;
+}
