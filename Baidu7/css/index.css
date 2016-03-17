@@ -137,6 +137,175 @@ html {overflow-y: scroll;}
 	display: block;
 	text-align: center;
 }
+/*Lei*/
+
+.bodyMoreAbout{
+	height:350px;
+	background-color:#edecec;
+}
+.bodyMoreAbout div:first-child{
+	padding-top: 80px;
+    width: 91px;
+    height: 92px;
+    margin: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/biglogo.png);
+}
+.bodyMoreAbout div:first-child+div{
+	padding-top:20px;
+	font-size:53px;
+	font-family:'黑体';
+	text-align:center;
+	color:#81797A;
+}
+.bodySearch{
+	height:341px;
+	position:relative;
+}
+.bodySearchBackground{
+	width:100%;
+	position:absolute;
+}
+.contentWarper{
+	width:100%;
+	height:200px;
+	position: absolute;
+	top:50px;
+}
+.contentWarper>div:first-child{
+	font:21px '微软雅黑';
+	color:white;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.contentWarper>div:first-child+div{
+	margin-top:10px;
+	margin:auto;
+	width:30px;
+	height:3px;
+	background-color:white;
+}
+.contentWarper>div:first-child+div+div{
+	font:12px '微软雅黑';
+	color:white;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 18px;
+}
+.bodySearchTextboxAndButton{
+	height:90px;
+	padding-top: 20px;
+	width:1120px;
+	margin:auto;
+}
+.bodySearchTextboxAndButton>div{
+	width:250px;
+	margin-left:15px;
+	margin-right:15px;
+	float:left;
+	height:40px;
+}
+.bodySearchBox{
+	background-color:white;
+}
+.bodySearchButton{
+	background-color:#BE4E4A;
+	line-height: 40px;
+    font: 16px/40px '微软雅黑';
+    color: #ffffff;
+	text-align:center;
+}
+.bodySearchButton:hover{
+	background-color:#ec8c7f;
+	cursor:pointer;
+}
+
+.bodySearchOption{
+	width:40px;
+	height:40px;
+	float:right;
+	background:url(../images/checkwithbg.png) no-repeat center;
+	cursor:pointer;
+}
+.bodySearchText{
+	width: 210px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    font: 13px/40px '微软雅黑';
+    color: #a8aaaa;
+	text-indent: 10px;
+}
+.bodySearchWordForShow{
+	width: 250px;
+    height: 40px;
+    margin-top: 40px;
+    background-color: #e3e3e3;
+    font: 13px/40px'微软雅黑';
+    text-indent: 20px;
+    color: #736f70;
+    display:none;
+}
+.bodySearchBox:hover>.bodySearchWordForShow{
+	display:block;
+}
+.bodyPastActivity{
+	height:600px;
+	background-color: #f7f7f7;
+	padding-top:20px;
+}
+.bodyPastActivityWarper{
+	width:1200px;
+	height:500px;
+	margin:auto;
+	padding-top:100px;
+}
+.bodyPastActivityContainer{
+	height:463px;
+	width:260px;
+    margin-left:20px;
+    margin-right:20px;
+    float:left;
+    background-color:white;
+    position: relative;
+}
+.bodyPastActivityContainer:first-child{
+    background: url(../images/pic_4.png) no-repeat 25px 0px;
+}
+.bodyPastActivityContainer:first-child+div{
+    background: url(../images/pic_4.png) no-repeat -230px 100px;
+}
+.bodyPastActivityContainer:first-child+div+div{
+	background:url(../images/pic_4.png) no-repeat -500px 0px;
+}
+.bodyPastActivityContainer:first-child+div+div+div{
+	background:url(../images/pic_4.png) no-repeat -740px 0px;
+}
+.bodyPastActivityTopBox{
+	position:absolute;
+	top:0px;
+	height:100px;
+	width:260px;
+}
+.bodyPastActivityBottomBox{
+	position:absolute;
+	bottom:0px;
+	height:100px;
+	width:260px;
+}
+.bodyPastActivityContainer h4{
+	text-align: center;
+	font-family: '微软雅黑';
+    font-weight: 600;
+}
+.bodyPastActivityContainer h5{
+	text-align:center;
+	font:'微软雅黑';
+	color:#a8aaaa;
+	font-weight:500;
+}
+/*Tao*/
 
 /*Li*/
 /*mainNewWorld*/
@@ -341,7 +510,7 @@ html {overflow-y: scroll;}
 	line-height: 30px;
 }
 .volunteerMainLeft div span:before{
-	content: url(images/check.png);
+	content: url(imagess/check.png);
 }
 .volunteerMainRight{
 	float: left;
