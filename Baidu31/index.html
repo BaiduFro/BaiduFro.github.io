@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	select{
+		width:120px;
+	}
+	input{
+		width:185px
+	}
+	span{
+		font:12px/20px '微软雅黑';
+	}
+	.check{
+		width:50px;
+	}
+	#notInSchool{
+		display:none;
+	}
+</style>
+<body>
+	<form>
+		<input class = "check" type ="radio" value = "inSchool" checked="true" onchange ="typeSwitch(this)">在校生
+		<input class = "check" type ="radio" value = "notInSchool"  onchange ="typeSwitch(this)">非在校生
+	</form>
+	<form id = "inSchool">
+		<select id = "city" onchange = "cityChange(this,'school')">
+			<option>北京</option>
+			<option>上海</option>
+			<option>山东</option>
+		</select>
+		<select id = "school">
+			<option>北京大学</option>
+			<option>清华大学</option>
+			<option>航空航天大学</option>
+			<option>北京邮电大学</option>
+		</select>
+	</form>
+	<form id = "notInSchool">
+		<span>就业单位</span>
+		<input type = "textbox">
+	</form>
+	<script type="text/javascript">
+	var SH = ["交通大学","复旦大学","同济大学"]
+	var SD = ["中国海洋大学","山东大学"]
+	var BJ = ["北京大学","清华大学","航空航天大学","北京邮电大学"]
+
+	function cityChange(obj,aimId){
+		var selectedString = obj.options[obj.selectedIndex].text;
+		var aimArray;
+		switch(selectedString){
+			case "北京":aimArray = BJ ; break ;
+			case "上海":aimArray = SH ; break ;
+			case "山东":aimArray = SD ; break ;
+		}
+		var aimSelect = document.getElementById(aimId);
+		var i ;
+		var staticLength = aimSelect.childNodes.length;
+		for(i = staticLength-1;i >=0; i--){
+			aimSelect.removeChild(aimSelect.childNodes[i])
+		}
+		for(i = 0;i<aimArray.length;i++){
+			var newOption  = document.createElement("option")
+			newOption.text = aimArray[i];
+			aimSelect.appendChild(newOption);
+		}
+	}
+	function typeSwitch(obj){
+		var value = obj.value;
+		var radios = obj.parentNode.getElementsByTagName("input");
+		var i;
+		var formToDelete;
+		var formToCreate = document.getElementById(value);
+		for (i=0;i<radios.length;i++){
+			if(radios[i] != obj&& radios[i].checked == true){
+				var valuer = radios[i].value;
+				formToDelete = document.getElementById(valuer);
+				radios[i].checked = false
+			}
+		}
+		formToCreate.style.display = "block"
+		formToDelete.style.display = "none";
+
+	}
+	</script>
+</body>
+</html>

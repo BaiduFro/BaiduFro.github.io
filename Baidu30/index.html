@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style type="text/css">
+	.title{
+		width:100px;
+		height:60px;
+		float:left;
+		line-height:60px;
+		font-size:30px;
+		font-family:'黑体';
+		font-weight: 300;
+		text-align:center;
+	}
+	.box{
+		width:400px;
+		height:60px;
+		border-width:0px;
+		padding:0px;
+		background-image: url(image/textbox_gray.png);
+	    background-repeat:no-repeat;
+	    background-position-x: right;
+	    text-indent: 4px;
+	    line-height: 60px;
+	    font-size: 40px;
+	}
+	.tip{
+		width:400px;
+		margin-left:100px;
+		font-weight:700;
+	}
+	button{
+		height: 40px;
+	    width: 500px;
+	    margin:10px 0px 0px 0px;
+	    padding: 0px;
+	    border-width: 0px;
+	    position: relative;
+	    top: -8px;
+	    background-color: #2f79ba;
+	    border-radius: 10px;
+	    font-size: 20px;
+	    color: white;
+	    font-family: '微软雅黑';
+	}
+</style>
+	<div class="Name">
+		<div class = "title">名称</div>
+		<input class = "box"onfocus="guideGive(this)"onblur="autoCheck(this)"/>
+		<div class = "tip"></div>
+	</div>
+	<div class="Pass">
+		<div class = "title">密码</div>
+		<input type="password"class = "box"onfocus="guideGive(this)"onblur="autoCheck(this)"/>
+		<div class = "tip"></div>
+	</div>
+	<div class="PassCheck">
+		<div class = "title">确认</div>
+		<input type="password"class = "box"onfocus="guideGive(this)"onblur="autoCheck(this)"/>
+		<div class = "tip"></div>
+	</div>
+	<div class="Email">
+		<div class = "title">邮箱</div>
+		<input type="password"class = "box"onfocus="guideGive(this)"onblur="autoCheck(this)"/>
+		<div class = "tip"></div>
+	</div>
+	<div class="Tel">
+		<div class = "title">手机</div>
+		<input type="password"class = "box"onfocus="guideGive(this)"onblur="autoCheck(this)"/>
+		<div class = "tip"></div>
+	</div>
+	<!--以一个div为分割单元，class代表检测内容类型，结构遵循“名称”“输入框”换行“提示信息框”的结构，并给输入框绑定上onfocus和onBlur事件-->
+	<button onclick="checkAll()">提&nbsp;交</button>
+<script language="JavaScript" src="js/js.js"></script>
+</body>
+</html>

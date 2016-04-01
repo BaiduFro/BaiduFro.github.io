@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<style type="text/css">  
+    input {
+	    border: 0px;
+	    background-image: url(image/textbox_gray.png);
+	    background-repeat: no-repeat;
+	    background-position-x: right;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    height: 60px;
+	    text-indent: 4px;
+	    line-height: 60px;
+	    font-size: 40px;
+	    width: 400px;
+	}
+	#testButton{
+		height: 60px;
+	    width: 100px;
+	    margin: 0px;
+	    padding: 0px;
+	    border-width: 0px;
+	    position: relative;
+	    top: -8px;
+	    background-color: #2f79ba;
+	    border-radius: 10px;
+	    font-size: 20px;
+	    color: white;
+	    font-family: '微软雅黑';
+	}
+	#infoDisplay{
+		width:400px;
+		font-family:'黑体';
+		font-weight: 700;
+		color:gray;
+		margin-left:80px;
+	}
+	#title{
+		height:60px;
+		width:80px;
+		float:left;
+		line-height:60px;
+		font-size:30px;
+		font-family:'黑体';
+		font-weight: 300;
+	}
+    </style>  
+    </head>  
+    <body>  
+        <div id="title">名称</div>
+        <input id="contentBox"value=""/>
+        <button id="testButton"onclick="test(),false">检&nbsp;测</button> 
+        
+        <div id="infoDisplay">必填，长度为4~16个字符</div>
+<script language="JavaScript" src="js/js.js"></script>
+</body>
+</html>
